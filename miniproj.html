@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MINI PROJECTS</title>
+<link rel="stylesheet" href="miniproj.css">
+    <script src="miniproj.js"></script>
+<body>
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="support.html">Family</a>
+    <a href="profession.html">Profession</a>
+    <a href="bio.html">My Future</a>
+    <a href="miniproj.html">Mini Projects</a>
+    <!--This code was taken from w3schools.com-->
+</div>
+<br><br>
+<h1>MINI-PROJECTSSS!!!</h1>
+<br><br>
+
+<form name="project3">
+    <h2>Grade Assigner</h2>
+    Type a numeric score to convert: <input type="text" name="num1">
+    <br><br>
+    <button type="button" onclick="document.project3.result.value=assignGrade()">Convert Grade!</button>
+    <br><br>
+    <input type="text" readonly="true" name="result" style="border-style: none">
+</form>
+<br><br>
+<br><br>
+<form name="project5">
+    <h3>Calorie Counter</h3>
+        <select id="activities">
+            <option value="Bowling">Bowling</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Volleyball">Volleyball</option>
+            <option value="Video Games">Video Games</option>
+        </select>
+        <br><br>
+       Type the Number of Minutes Spent on Your Activity: <input type="text" name="num1">
+        <br><br>
+        <button type="button" onclick="document.project5.result.value=calCounter()">CALORIES!!</button>
+        <br><br>
+    <input type="text" readonly="true" name="result" style="border-style: none">
+
+</form>
+<br><br>
+<br><br>
+
+<img id="temp1" src="" height="500">
+
+<form name="project6">
+    <h4>Temperature Bug</h4>
+    Please Enter the Temperature Below<br>
+    <input type="text" name="temp1">
+    <br><br>
+   <button type="button" onclick="document.project6.result.value=tempBug()">TEMPERATURE!</button>
+    <br><br>
+    Result: <input type="text" name="result" readonly="true">
+
+</form>
+
+
+
+</body>
+</html>
