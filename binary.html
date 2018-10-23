@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="binary.css">
+    <title>Base Converter</title>
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="support.html">Family</a>
+    <a href="profession.html">Profession</a>
+    <a href="bio.html">My Future</a>
+    <a href="miniproj.html">Mini Projects</a>
+    <a href="binary.html">JavaScript Binary</a>
+    <!--This code was taken from w3schools.com-->
+</div>
+<br><br>
+<form name="toBinary">
+    <h2>Convert to Base 2</h2>
+    Input Number <input name="num"><br>
+    <br><br>
+    <button type="button" onclick="document.toBinary.result.value=tenToSmall()">to Binary</button>
+    <br><br>
+    Result <input name="result" readonly="true">
+</form>
+
+    <br><br>
+    <br><br>
+
+<form name="toBaseTen">
+    <h2>Convert to base 10</h2>
+    <br><br>
+    Number: <input type="number" name="inputOne">
+    <br><br>
+    Base: <input type="number" name="inputTwo">
+    <br><br>
+    <button type="button" onclick="document.toBaseTen.result.value=smallToTen()">To Base Ten</button>
+    <br><br>
+    Result: <input type="text" name="result" readonly="true">
+</form>
+
+</body>
+</html>
