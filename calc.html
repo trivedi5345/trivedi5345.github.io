@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="calc.css">
+    <title>jS Calculator</title>
+</head>
+<body>
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="support.html">Family</a>
+    <a href="profession.html">Profession</a>
+    <a href="bio.html">My Future</a>
+    <a href="miniproj.html">Mini Projects</a>
+    <a href="binary.html">JavaScript Binary</a>
+    <a href="calc.html">JavaScript Calculator</a>
+    <!--This code was taken from w3schools.com-->
+</div>
+<h1>Calculator!!</h1>
+<form name="calculator">
+    <input name="calcWindow" id="input" type="text" readonly="true" size="50">
+    <br><br>
+    <button type="button" value="^" onclick="insert('^')">^</button>
+    <button type="button" value="1" onclick="insert(1)">1</button>
+    <button type="button" value="2" onclick="document.calculator.calcWindow.value+='2'">2</button>
+    <button type="button" value="3" onclick="document.calculator.calcWindow.value+='3'">3</button>
+
+    <button type="button" value="/" onclick="document.calculator.calcWindow.value+='/'">/</button>
+    <button type="button" value="<--" onclick="document.calculator.calcWindow.value=back()"><--</button>
+    <br><br>
+    <button type="button" value="π" onclick="insert('*3.14')">π</button>
+    <button type="button" value="4" onclick="document.calculator.calcWindow.value+='4'">4</button>
+    <button type="button" value="5" onclick="document.calculator.calcWindow.value+='5'">5</button>
+    <button type="button" value="6" onclick="document.calculator.calcWindow.value+='6'">6</button>
+    <button type="button" value="*" onclick="document.calculator.calcWindow.value+='*'">*</button>
+    <br><br>
+    <button type="button" value="7" onclick="document.calculator.calcWindow.value+='7'">7</button>
+    <button type="button" value="8" onclick="document.calculator.calcWindow.value+='8'">8</button>
+    <button type="button" value="9" onclick="document.calculator.calcWindow.value+='9'">9</button>
+    <button type="button" value="-" onclick="document.calculator.calcWindow.value+='-'">-</button>
+    <button type="button" value="CA" onclick="document.calculator.calcWindow.value=onreset">CLEAR</button>
+    <br><br>
+    <button type="button" value="²√" onclick="document.calculator.calcWindow.value=sqrtNum()">²√</button>
+    <button type="button" value="0" onclick="document.calculator.calcWindow.value+='0'">0</button>
+    <button type="button" value="." onclick="insert('.')">.</button>
+    <button type="button" value="+" onclick="insert('+')">+</button>
+    <button type="button" value="=" onclick="equal()">=</button>
+
+</form>
+
+
+
+
+
+
+</body>
+</html>
