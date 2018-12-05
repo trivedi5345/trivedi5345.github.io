@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs.css">
+    <title>Mad Libs</title>
+
+    <script type="text/javascript">
+        /*
+    ()An array to store the words
+    ()Use a minimum of 10 words
+    ()Properly labeled input fields
+    ()A button that displays a story complete with user-defined words
+    ()Good webpage design and CSS
+    ()Add this page to your Promotional Webpage as a new tab
+    */
+
+
+        var list = [];
+        function libsMad()
+        {
+            list.push(document.madLibs.input1.value); //place 0
+            list.push(document.madLibs.input2.value); //Profession 1
+            list.push(document.madLibs.input3.value); //person 1 2
+            list.push(document.madLibs.input4.value); //noun1 3
+            list.push(document.madLibs.input5.value); //noun2 4
+            list.push(document.madLibs.input6.value); //noun3 5
+            list.push(document.madLibs.input7.value); //famous position 6
+            list.push(document.madLibs.input8.value); //Plural noun   7
+            list.push(document.madLibs.input9.value); //body part  8
+            list.push(document.madLibs.input10.value); //type of liquid 9
+
+
+
+
+            return  "In 356 B.C., Phillip of Macedonia, the ruler of a province in northern " + list[0].bold() +  " , became the father of a bouncing baby named Alexander. " +
+                "Alexander's teacher was Aristotle, the famous " + list[1].bold() + " .When he was twenty years old, his father was murdered by " + list[2].bold() +  ", after which he became " + list[3].bold() + " of all Macedonia. " +
+                "In 334, he invaded Persia and defeated " + list[4].bold() + " at the battle of " + list[5].bold() + ". Later, at Arabela, he won his most important battle, over Darius the Third. This made him " + list[6].bold() +
+                " over all Persians. Then he marched to India, and many of his " + list[7].bold() + " died. After that, Alexander began drinking too much " + list[9].bold() + " ,and at the age of 33, he died of an infection in the " + list[8].bold() + " .His last words are reported to have been, 'There is no more of the world to conquer'.";
+        }
+
+    </script>
+
+</head>
+
+<body>
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="support.html">Family</a>
+    <a href="profession.html">Profession</a>
+    <a href="bio.html">My Future</a>
+    <a href="miniproj.html">Mini Projects</a>
+    <a href="binary.html">JavaScript Binary</a>
+    <a href="calc.html">JavaScript Calculator</a>
+    <a href="lib.html">Mad Libs</a>
+    <!--This code was taken from w3schools.com-->
+</div>
+<h1>Make Your Own Customized Story</h1>
+<form name="madLibs">
+  A Place: <input type="text" name="input1">
+    <br><br>
+    Profession: <input type="text" name="input2">
+    <br><br>
+    Person 1: <input type="text" name="input3">
+    <br><br>
+    Noun 1 (use 'the'): <input type="text" name="input4">
+    <br><br>
+    Noun 2: <input type="text" name="input5">
+    <br><br>
+    A Place: <input type="text" name="input6">
+    <br><br>
+   Famous Position (King, queen, etc.): <input type="text" name="input7">
+    <br><br>
+    Plural Noun 1: <input type="text" name="input8">
+    <br><br>
+    Type of Liquid: <input type="text" name="input10">
+    <br><br>
+    Body Part: <input type="text" name="input9">
+    <br><br>
+    <button type="button" onclick=document.getElementById('libsMad').innerHTML=libsMad()>Lets See How it Looks!</button>
+
+</form>
+
+<p id="libsMad">
+
+</p>
+
+
+
+
+</body>
+</html>
